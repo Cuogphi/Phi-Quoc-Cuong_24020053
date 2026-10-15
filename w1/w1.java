@@ -27,6 +27,7 @@ public class w1 {
         }
     }
 
+    
     public static long bai3_tinhGiaiThua(int n) {
         long res = 1;
         for (int i = 2; i <= n; i++) {
