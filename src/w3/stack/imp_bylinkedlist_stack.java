@@ -1,39 +1,50 @@
 package w3.stack;
 
-import java.util.LinkedList;
-
 public class imp_bylinkedlist_stack {
-    private LinkedList<Integer> list;
+    private Node top;
+    private int size;
 
-    public imp_bylinkedlist_stack() {
-        list = new LinkedList<>();
-    }
-
-    public void push(int x) {
-        list.addFirst(x);
+    public void push(int value) {
+        Node newNode = new Node(value);
+        newNode.next = top;
+        top = newNode;
+        size++;
     }
 
     public int pop() {
-        if (list.isEmpty()) {
+        if (isEmpty()) {
             System.out.println("Stack Underflow");
-            return -1; // or throw exception
+            return -1;
         }
-        return list.removeFirst();
+
+        int value = top.data;
+        top = top.next;
+        size--;
+        return value;
     }
 
     public int peek() {
-        if (list.isEmpty()) {
+        if (isEmpty()) {
             System.out.println("Stack is empty");
-            return -1; // or throw exception
+            return -1;
         }
-        return list.getFirst();
+        return top.data;
     }
 
     public boolean isEmpty() {
-        return list.isEmpty();
+        return top == null;
     }
 
     public int size() {
-        return list.size();
+        return size;
+    }
+
+    private static class Node {
+        private final int data;
+        private Node next;
+
+        private Node(int data) {
+            this.data = data;
+        }
     }
 }
