@@ -22,3 +22,6 @@ replay_pid*
 *.iws
 *.ipr
 out/
+
+# Advanced / Private implementations
+src/w4_advanced/

@@ -1,5 +1,9 @@
 package sort;
 
+// logic for selection sort :
+// 1. Find the minimum element in the unsorted array
+// 2. Swap it with the first element of the unsorted array
+
 public class selection_sort {
     public void selectionSort(int[] arr) {
         int n = arr.length;
