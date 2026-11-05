@@ -53,15 +53,6 @@ public class mergesort {
             merge(arr, left, mid, right);
         }
     }
-// explain the merge sort algorithm in detail
-    public void explainMergeSort() {
-        System.out.println("Merge Sort is a divide-and-conquer algorithm that divides the input array into two halves, recursively sorts them, and then merges the sorted halves.");
-        System.out.println("1. Divide: The array is divided into two halves until each sub-array contains a single element.");
-        System.out.println("2. Conquer: Each sub-array is sorted recursively.");
-        System.out.println("3. Combine: The sorted sub-arrays are merged to produce the final sorted array.");
-        System.out.println("The time complexity of Merge Sort is O(n log n) in all cases (best, average, worst).");
-        System.out.println("It is a stable sort and works well for large datasets.");
-    }
 }
 
 
