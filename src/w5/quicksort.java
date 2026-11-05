@@ -1,5 +1,6 @@
-package sort;
+package w5;
 
+//time complexity : O(n log n) in all cases (best, average, worst)
 public class quicksort {
     public void quickSort(int[] arr, int low, int high) {
         if (low < high) {

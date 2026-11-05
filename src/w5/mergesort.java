@@ -1,8 +1,9 @@
-package sort;
+package w5;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
+//time complexity : O(n log n) in all cases (best, average, worst)
 public class mergesort {
     public void merge (int[] arr, int left, int mid, int right) {
         int n1 = mid - left + 1;

@@ -1,4 +1,4 @@
-package sort;
+package w5;
 
 // logic for selection sort :
 // 1. Find the minimum element in the unsorted array
